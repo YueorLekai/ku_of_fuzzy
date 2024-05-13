@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/site-packages/numpy/__init__.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ZXbPMqhUXE5wCua1ajxELoGcfF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/fuzzy_math&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\it's" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="" />
+      <created>1702571345904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702571345904</updated>
+      <workItem from="1702571347996" duration="175000" />
+      <workItem from="1702571538372" duration="97000" />
+      <workItem from="1702571650237" duration="981000" />
+      <workItem from="1702572645237" duration="478000" />
+      <workItem from="1702646970117" duration="1536000" />
+      <workItem from="1702813447814" duration="3441000" />
+      <workItem from="1705843561848" duration="2664000" />
+      <workItem from="1709638204266" duration="2226000" />
+      <workItem from="1709640485736" duration="426000" />
+      <workItem from="1709640924517" duration="1287000" />
+      <workItem from="1710113164675" duration="2397000" />
+      <workItem from="1711004660839" duration="1117000" />
+      <workItem from="1711006571105" duration="296000" />
+      <workItem from="1711292778221" duration="27000" />
+      <workItem from="1711292815031" duration="58000" />
+      <workItem from="1711896446248" duration="986000" />
+      <workItem from="1712146277919" duration="4679000" />
+      <workItem from="1712627864242" duration="13175000" />
+      <workItem from="1712704187352" duration="20837000" />
+      <workItem from="1712818269041" duration="1437000" />
+      <workItem from="1712819762337" duration="953000" />
+      <workItem from="1712820728563" duration="717000" />
+      <workItem from="1712822730825" duration="349000" />
+      <workItem from="1713080171461" duration="14351000" />
+      <workItem from="1713141659869" duration="3597000" />
+      <workItem from="1713158795850" duration="17676000" />
+      <workItem from="1713225755793" duration="16653000" />
+      <workItem from="1713259488914" duration="1102000" />
+      <workItem from="1713260903836" duration="96000" />
+      <workItem from="1713261025447" duration="825000" />
+      <workItem from="1713314984824" duration="124000" />
+      <workItem from="1713318176028" duration="216000" />
+      <workItem from="1713322788885" duration="268000" />
+      <workItem from="1713323072911" duration="11511000" />
+      <workItem from="1713347317128" duration="1742000" />
+      <workItem from="1713353726420" duration="4462000" />
+      <workItem from="1713358224140" duration="8743000" />
+      <workItem from="1713512619722" duration="38000" />
+      <workItem from="1713713347557" duration="920000" />
+      <workItem from="1713718509642" duration="166000" />
+      <workItem from="1713718687803" duration="167000" />
+      <workItem from="1713718865754" duration="125000" />
+      <workItem from="1713830731116" duration="13024000" />
+      <workItem from="1713862234215" duration="4021000" />
+      <workItem from="1713923784460" duration="1558000" />
+      <workItem from="1713959214743" duration="7678000" />
+      <workItem from="1714009102515" duration="3808000" />
+      <workItem from="1714033256649" duration="45000" />
+      <workItem from="1714130917358" duration="2518000" />
+      <workItem from="1714290535246" duration="1207000" />
+      <workItem from="1714399405803" duration="13000" />
+      <workItem from="1714438253632" duration="48000" />
+      <workItem from="1714896698552" duration="3287000" />
+      <workItem from="1715040374650" duration="5628000" />
+      <workItem from="1715508202525" duration="4245000" />
+      <workItem from="1715516866456" duration="13504000" />
+      <workItem from="1715555472866" duration="1839000" />
+      <workItem from="1715559143706" duration="659000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/it_s$kit.coverage" NAME="kit 覆盖结果" MODIFIED="1712632182074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$txt.coverage" NAME="txt文件 覆盖结果" MODIFIED="1709640719041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$hello.coverage" NAME="hello 覆盖结果" MODIFIED="1712751374704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$1.coverage" NAME="1 覆盖结果" MODIFIED="1713879927499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$kk.coverage" NAME="kk 覆盖结果" MODIFIED="1713963962557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1714026990524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$simply.coverage" NAME="simply 覆盖结果" MODIFIED="1713833862112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$main.coverage" NAME="main 覆盖结果" MODIFIED="1709639949649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$Example8_10.coverage" NAME="Example8_10 覆盖结果" MODIFIED="1712535617451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../math/Python_for_fuzzy" />
+    <SUITE FILE_PATH="coverage/it_s$sample1.coverage" NAME="sample1 覆盖结果" MODIFIED="1711897310985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$gad.coverage" NAME="gad 覆盖结果" MODIFIED="1713323042165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$ol.coverage" NAME="ol 覆盖结果" MODIFIED="1709641314644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$test3.coverage" NAME="test3 覆盖结果" MODIFIED="1709640942256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$111.coverage" NAME="111 覆盖结果" MODIFIED="1712751474971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$question1.coverage" NAME="question1 覆盖结果" MODIFIED="1713862201093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../hzb" />
+    <SUITE FILE_PATH="coverage/it_s$nen.coverage" NAME="nen 覆盖结果" MODIFIED="1712736318057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$.coverage" NAME="吸烟情况 覆盖结果" MODIFIED="1709640908239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$hist.coverage" NAME="hist 覆盖结果" MODIFIED="1712751208632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$__init__.coverage" NAME="__init__ 覆盖结果" MODIFIED="1712822707663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ku_of_fuzzy" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$kl.coverage" NAME="kl 覆盖结果" MODIFIED="1713426514456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$test4.coverage" NAME="test4 覆盖结果" MODIFIED="1715528211604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$fuzzy_calculate.coverage" NAME="fuzzy_calculate 覆盖结果" MODIFIED="1715559148165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ku_of_fuzzy" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$Doctests____init____.coverage" NAME="Doctests (__init__ 内) 覆盖结果" MODIFIED="1714133328709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python312/Lib/site-packages/numpy" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$try.coverage" NAME="try 覆盖结果" MODIFIED="1715512259224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$test.coverage" NAME="test 覆盖结果" MODIFIED="1713966156606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$test2.coverage" NAME="test2 覆盖结果" MODIFIED="1713962544226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$kitt1.coverage" NAME="kitt1 覆盖结果" MODIFIED="1712819593866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$2.coverage" NAME="2 覆盖结果" MODIFIED="1713080203154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$test5.coverage" NAME="test5 覆盖结果" MODIFIED="1715520989442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$1.coverage" NAME="1 覆盖结果" MODIFIED="1712756574925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/fuzzy_math" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$setup.coverage" NAME="setup 覆盖结果" MODIFIED="1715531940182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ku_of_fuzzy" />
+    <SUITE FILE_PATH="coverage/it_s$xwls.coverage" NAME="xwls操作 覆盖结果" MODIFIED="1709641147181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/it_s$gaga.coverage" NAME="gaga 覆盖结果" MODIFIED="1712756106392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/fuzzy_math$temp_homework.coverage" NAME="temp_homework 覆盖结果" MODIFIED="1713234852651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

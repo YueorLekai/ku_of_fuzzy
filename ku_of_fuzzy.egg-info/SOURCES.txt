@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ku_of_fuzzy/__init__.py
+ku_of_fuzzy/fuzzy_calculate.py
+ku_of_fuzzy.egg-info/PKG-INFO
+ku_of_fuzzy.egg-info/SOURCES.txt
+ku_of_fuzzy.egg-info/dependency_links.txt
+ku_of_fuzzy.egg-info/requires.txt
+ku_of_fuzzy.egg-info/top_level.txt
