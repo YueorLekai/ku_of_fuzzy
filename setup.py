@@ -8,7 +8,7 @@ setup(
     description='用于模糊数学计算的Python库',
     long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/YueorLekai/ku_of_fuzzy',
+    url='https://github.com/YueorLekai/fuzzy_math',
     packages=find_packages(),
     install_requires=[
         'pandas>=2.2.1',
