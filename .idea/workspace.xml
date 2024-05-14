@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" afterDir="false" />
-    </list>
+    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,6 +127,7 @@
       <workItem from="1715569945122" duration="96000" />
       <workItem from="1715645818597" duration="4162000" />
       <workItem from="1715650042688" duration="110000" />
+      <workItem from="1715650247975" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="版本0.1.1">
       <created>1715648945966</created>
@@ -160,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715649649966</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="版本0.1.1">
+      <created>1715650288424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715650288424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
