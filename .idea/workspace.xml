@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +129,8 @@
       <workItem from="1715565075607" duration="2084000" />
       <workItem from="1715567231657" duration="31000" />
       <workItem from="1715569945122" duration="96000" />
-      <workItem from="1715645818597" duration="3695000" />
+      <workItem from="1715645818597" duration="4162000" />
+      <workItem from="1715650042688" duration="110000" />
     </task>
     <task id="LOCAL-00001" summary="版本0.1.1">
       <created>1715648945966</created>
@@ -136,7 +139,28 @@
       <option name="project" value="LOCAL" />
       <updated>1715648945966</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="版本0.1.1">
+      <created>1715649566381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715649566381</updated>
+    </task>
+    <task id="LOCAL-00003" summary="版本0.1.1">
+      <created>1715649573403</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715649573403</updated>
+    </task>
+    <task id="LOCAL-00004" summary="版本0.1.1">
+      <created>1715649649966</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715649649966</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

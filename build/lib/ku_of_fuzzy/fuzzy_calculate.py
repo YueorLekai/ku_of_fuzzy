@@ -351,12 +351,13 @@ def threshold_matrix(df, threshold):
     return df.where(df >= threshold, 0).where(df < threshold, 1)
 
 
-def is_fuzzy_matrix_symmetric(matrix_df):
+def is_fuzzy_matrix_symmetric(matrix_df, tolerance=1e-8):
     """
     判断模糊矩阵是否具有对称性。
 
     Args:
         matrix_df (pd.DataFrame): 输入的模糊矩阵，应为方阵。
+        tolerance (float): 用于比较浮点数时的容差值，默认为1e-8。
 
     Returns:
         bool: 如果模糊矩阵具有对称性，则返回True；否则返回False。
@@ -367,24 +368,25 @@ def is_fuzzy_matrix_symmetric(matrix_df):
 
     # 检查是否对称
     for i in range(matrix_df.shape[0]):
-        for j in range(matrix_df.shape[1]):
-            if matrix_df.iloc[i, j] != matrix_df.iloc[j, i]:
-                return 0
-    return 1
+        for j in range(i, matrix_df.shape[1]):  # 只需检查矩阵的上三角部分
+            if not np.isclose(matrix_df.iloc[i, j], matrix_df.iloc[j, i], atol=tolerance):
+                return False
+    return True
 
 
 # 模糊矩阵自反性判断
-def is_fuzzy_matrix_reflexive(df):
+def is_fuzzy_matrix_reflexive(df, tolerance=1e-8):
     """
-        判断模糊矩阵是否自反。
-        参数:
-            df (DataFrame): 需要判断的pandas DataFrame。
-        返回:
-            bool: 如果矩阵自反则返回True，否则返回False。
+    判断模糊矩阵是否自反。
+    参数:
+        df (DataFrame): 需要判断的pandas DataFrame。
+        tolerance (float): 用于比较浮点数时的容差值，默认为1e-8。
+    返回:
+        bool: 如果矩阵自反则返回True，否则返回False。
     """
-    # 检查主对角线上的元素是否都为1
+    # 检查主对角线上的元素是否都近似等于1
     for i in range(min(df.shape[0], df.shape[1])):
-        if df.iloc[i, i] != 1:
+        if not np.isclose(df.iloc[i, i], 1, atol=tolerance):
             return False
     return True
 
@@ -401,7 +403,6 @@ def is_fuzzy_matrix_Transmissive(df):
     """
     # 使用fuzzy_matrix_composition函数合成矩阵A和它自身
     df_composed = fuzzy_matrix_composition(df, df)
-
     # 比较合成后的矩阵A^2和原矩阵A
     for i in range(df.shape[0]):
         for j in range(df.shape[1]):
@@ -411,30 +412,34 @@ def is_fuzzy_matrix_Transmissive(df):
 
 
 # 判读矩阵是否为等价矩阵
-def is_fuzzy_matrix_equivalent(df):
+def is_fuzzy_matrix_equivalent(df, tolerance=1e-8):
     """
         判断矩阵是否为等价矩阵。
         参数:
             df (DataFrame): 需要判断的pandas DataFrame。
+            tolerance (float): 用于比较浮点数时的容差值，默认为1e-8。
+
         返回:
             bool: 如果矩阵是等价矩阵则返回1，否则返回0。
         """
-    if is_fuzzy_matrix_Transmissive(df) and is_fuzzy_matrix_reflexive(df) and is_fuzzy_matrix_symmetric(df):
+    if is_fuzzy_matrix_Transmissive(df) and is_fuzzy_matrix_reflexive(df, tolerance) and is_fuzzy_matrix_symmetric(df,
+                                                                                                                   tolerance):
         return 1
     else:
         return 0
 
 
 # 判断矩阵是否为相似矩阵
-def is_fuzzy_matrix_similar(df):
+def is_fuzzy_matrix_similar(df, tolerance=1e-8):
     """
         判断矩阵是否为相似矩阵。
         参数:
             df (DataFrame): 需要判断的pandas DataFrame。
+            tolerance (float): 用于比较浮点数时的容差值，默认为1e-8。
         返回:
             bool: 如果矩阵是相似矩阵则返回1，否则返回0。
         """
-    if is_fuzzy_matrix_reflexive(df) and is_fuzzy_matrix_symmetric(df):
+    if is_fuzzy_matrix_reflexive(df, tolerance) and is_fuzzy_matrix_symmetric(df, tolerance):
         return 1
     else:
         return 0
@@ -442,22 +447,26 @@ def is_fuzzy_matrix_similar(df):
 
 # 平方法求相似矩阵传递闭包
 
-def fuzzy_matrix_transitive_closure(df):
+def fuzzy_matrix_transitive_closure(df, tolerance=1e-8):
     """
-    输入相似矩阵
-    返回合成后的等价矩阵
-    """
+        判断矩阵是否为相似矩阵。
+        参数:
+            df (DataFrame): 需要判断的pandas DataFrame。
+            tolerance (float): 用于比较浮点数时的容差值，默认为1e-8。
+        返回:
+            df (DataFrame): 传递闭包后的等价矩阵
+        """
     # 初始化传递闭包矩阵为输入矩阵
     transitive_closure = df.copy()
     # 判读是否为相似矩阵
-    if not is_fuzzy_matrix_similar(transitive_closure):
-        raise ValueError("非相似矩阵")
+    if not is_fuzzy_matrix_similar(transitive_closure, tolerance):
+        raise ValueError("非相似矩阵或者更改容差tolerance")
     for _ in range(1000000):
         # 计算当前传递闭包矩阵与自身的模糊矩阵合成
         transitive_closure = fuzzy_matrix_composition(transitive_closure, transitive_closure)
-        if is_fuzzy_matrix_equivalent(transitive_closure):
+        if is_fuzzy_matrix_equivalent(transitive_closure, tolerance):
             return transitive_closure
-    raise ValueError("合成次数过多")
+    raise ValueError("合成次数过多或者更改容差tolerance")
 
 
 # 模糊矩阵的linkage，用于dendrogram()聚类图的绘制
