@@ -162,6 +162,7 @@ plt.show()
 - **描述**: 判断模糊矩阵是否具有对称性。
 - **参数**:
   - `matrix_df` (pd.DataFrame): 输入的模糊矩阵，应为方阵。
+  - `tolerance`(float): 判断接近的容差，默认为1e-8
 - **返回**: 如果模糊矩阵具有对称性，则返回True；否则返回False。
 
 ### 模糊矩阵自反性判断
@@ -169,6 +170,7 @@ plt.show()
 - **描述**: 判断模糊矩阵是否自反。
 - **参数**:
   - `df` (DataFrame): 需要判断的pandas DataFrame。
+  - `tolerance`(float): 判断接近的容差，默认为1e-8
 - **返回**: 如果矩阵自反则返回True，否则返回False。
 
 ### 模糊矩阵传递性判断
@@ -183,6 +185,7 @@ plt.show()
 - **描述**: 判断矩阵是否为等价矩阵。
 - **参数**:
   - `df` (DataFrame): 需要判断的pandas DataFrame。
+  - `tolerance`(float): 判断接近的容差，默认为1e-8
 - **返回**: 如果矩阵是等价矩阵则返回True，否则返回False。
 
 ### 模糊矩阵相似性判断
@@ -190,9 +193,13 @@ plt.show()
 - **描述**: 判断矩阵是否为相似矩阵。
 - **参数**:
   - `df` (DataFrame): 需要判断的pandas DataFrame。
+  - `tolerance`(float): 判断接近的容差，默认为1e-8。
 - **返回**: 如果矩阵是相似矩阵则返回True，否则返回False。
 
 ### 相似矩阵传递闭包求解
+- **参数**:
+  - `df` (DataFrame): 需要求解的相似矩阵pandas DataFrame。
+  - `tolerance`(float): 判断接近的容差，默认为1e-8。
 - **函数**: `fuzzy_matrix_transitive_closure(df)`
 - **描述**: 输入相似矩阵，返回合成后的等价矩阵。
 
