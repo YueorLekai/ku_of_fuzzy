@@ -550,7 +550,7 @@ plt.show()'''
 # 根据模糊等价矩阵生成动态聚类图
 
 
-def draw(df,width=6.4,height=4.8):
+def draw(df, width=6.4, height=4.8):
     """
     绘制基于模糊链接矩阵的动态聚类树状图。
 
@@ -585,6 +585,63 @@ print(df)
 draw(df)
 plt.show()
 '''
+
+
+# 聚类和阈值寻找函数
+def num_clusters(df, num):
+    """
+    寻找合适的阈值并进行聚类。
+    参数:
+        df (DataFrame): 需要聚类的pandas DataFrame。
+        num (int): 期望的聚类数量。
+    返回:
+        tuple: (找到的阈值, 聚类结果的列表)。
+    """
+    # 获取矩阵中的所有唯一值并降序排序
+    unique_values = np.sort(pd.unique(df.values.flatten()))[::-1]
+
+    # 遍历所有可能的阈值
+    for threshold in unique_values:
+        # 生成截矩阵
+        binary_matrix = threshold_matrix(df, threshold)
+        # 初始化聚类列表
+        cluster_list = []
+        # 遍历截矩阵的每一行
+        for i, row in binary_matrix.iterrows():
+            # 找到数值为1的元素对应的列名
+            connected_points = list(row[row == 1].index)
+            # 如果当前行的元素还没有被分配到任何聚类中
+            if not any(i in sublist for sublist in cluster_list):
+                # 创建新的聚类
+                new_cluster = [i] + connected_points
+                # 添加到聚类列表中
+                cluster_list.append(new_cluster)
+
+        # 清理聚类列表，合并重叠的聚类
+        cleaned_cluster_list = []
+        while len(cluster_list) > 0:
+            first, *rest = cluster_list
+            first = set(first)
+            lf = -1
+            while len(first) > lf:
+                lf = len(first)
+                rest2 = []
+                for r in rest:
+                    if len(first.intersection(set(r))) > 0:
+                        first |= set(r)
+                    else:
+                        rest2.append(r)
+                rest = rest2
+            cleaned_cluster_list.append(list(first))
+            cluster_list = rest
+
+        # 检查聚类数量是否符合要求
+        if len(cleaned_cluster_list) == num:
+            # 返回找到的阈值和聚类结果
+            return threshold, cleaned_cluster_list
+
+    # 如果没有找到符合条件的阈值和聚类
+    raise ValueError("没有找到符合条件的阈值和聚类")
 
 
 # 模糊统计量与最佳阈值的判读
