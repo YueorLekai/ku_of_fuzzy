@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="" />
+    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.0.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/dependency_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/top_level.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +129,14 @@
       <workItem from="1715516866456" duration="13504000" />
       <workItem from="1715555472866" duration="1839000" />
       <workItem from="1715559143706" duration="659000" />
+      <workItem from="1715563341768" duration="439000" />
+      <workItem from="1715563793168" duration="4000" />
+      <workItem from="1715564101357" duration="351000" />
+      <workItem from="1715565028321" duration="19000" />
+      <workItem from="1715565075607" duration="2084000" />
+      <workItem from="1715567231657" duration="31000" />
+      <workItem from="1715569945122" duration="96000" />
+      <workItem from="1715645818597" duration="2979000" />
     </task>
     <servers />
   </component>

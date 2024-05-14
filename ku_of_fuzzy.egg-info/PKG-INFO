@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: ku_of_fuzzy
 Version: 0.1.0
 Summary: 用于模糊数学计算的Python库
-Home-page: https://github.com/YueorLekai/ku_of_fuzzy
+Home-page: https://github.com/YueorLekai/fuzzy_math
 Author: Yuekai
 Author-email: 1977269004@qq.com
 Classifier: Programming Language :: Python :: 3
