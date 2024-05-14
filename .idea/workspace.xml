@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1">
-      <change afterPath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.2.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.2">
+      <change beforePath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.2.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.2.tar.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +130,7 @@
       <workItem from="1715645818597" duration="4162000" />
       <workItem from="1715650042688" duration="110000" />
       <workItem from="1715650247975" duration="715000" />
-      <workItem from="1715657660056" duration="990000" />
+      <workItem from="1715657660056" duration="1331000" />
     </task>
     <task id="LOCAL-00001" summary="版本0.1.1">
       <created>1715648945966</created>
@@ -188,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715650794881</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="版本0.1.2">
+      <created>1715669672205</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715669672205</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +207,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="版本0.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本0.1.1" />
+    <MESSAGE value="版本0.1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本0.1.2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/it_s$kit.coverage" NAME="kit 覆盖结果" MODIFIED="1712632182074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
