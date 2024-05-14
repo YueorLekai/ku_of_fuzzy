@@ -550,14 +550,23 @@ plt.show()'''
 # 根据模糊等价矩阵生成动态聚类图
 
 
-def draw(df):
-    """这里是提供一个我个人常用的聚类图的类型
-    如果想要个性化的化可以直接用augmented_dendrogram()和matplotlib
-    参数同dendrogram()一样的
-    加强版额外标出了λ的值
-    别忘了plt.show()哦
+def draw(df,width=6.4,height=4.8):
+    """
+    绘制基于模糊链接矩阵的动态聚类树状图。
+
+    参数:
+    df (DataFrame): 用于聚类的数据框。
+    width (float): 图形的宽度，默认为6.4英寸。
+    height (float): 图形的高度，默认为4.8英寸。
+
+    返回:
+    None: 该函数不返回任何值，但会显示一个树状图。
+    注意:
+    - 如果想要个性化定制图形，可以直接使用augmented_dendrogram()和matplotlib库的其他功能。
+    - 别忘了在函数调用后使用plt.show()来显示图形。
     """
     Z = fuzzy_linkage(df)
+    plt.figure(figsize=(width, height))
     augmented_dendrogram(Z, labels=df.columns)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     ax = plt.gca()

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1" />
+    <list default="true" id="88fea1dd-cdfa-480b-bda8-73e1fbaf521a" name="更改" comment="版本0.1.1">
+      <change afterPath="$PROJECT_DIR$/dist/ku_of_fuzzy-0.1.2.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" beforeDir="false" afterPath="$PROJECT_DIR$/ku_of_fuzzy/fuzzy_calculate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +136,8 @@
       <workItem from="1715569945122" duration="96000" />
       <workItem from="1715645818597" duration="4162000" />
       <workItem from="1715650042688" duration="110000" />
-      <workItem from="1715650247975" duration="353000" />
+      <workItem from="1715650247975" duration="715000" />
+      <workItem from="1715657660056" duration="990000" />
     </task>
     <task id="LOCAL-00001" summary="版本0.1.1">
       <created>1715648945966</created>
@@ -164,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715650288424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="版本0.1.1">
+      <created>1715650629541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715650629541</updated>
+    </task>
+    <task id="LOCAL-00007" summary="版本0.1.1">
+      <created>1715650794881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715650794881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

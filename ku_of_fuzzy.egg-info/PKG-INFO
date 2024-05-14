@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: ku_of_fuzzy
-Version: 0.1.1
+Version: 0.1.2
 Summary: 用于模糊数学计算的Python库
 Home-page: https://github.com/YueorLekai/ku_of_fuzzy
 Author: Yuekai
@@ -234,6 +234,8 @@ plt.show()
 - **描述**: 提供一个常用的聚类图绘制方法，额外标出了λ的值。如果需要个性化定制，可以使用`augmented_dendrogram()`和`matplotlib`库。
 - **参数**:
   - `df` (DataFrame): 输入的模糊等价矩阵。
+  - `width` (float): 图形的宽度，以英寸为单位，默认为6.4。
+  - `height` (float): 图形的高度，以英寸为单位，默认为4.8。
 - **注意**: 在绘制完聚类图后，使用`plt.show()`来显示图像。
 
 ### 模糊统计量F的求解

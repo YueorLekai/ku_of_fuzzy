@@ -27,9 +27,15 @@
 ### 添加
 
 
-- is_fuzzy_matrix_similar()
-- is_fuzzy_matrix_equivalent()
-- is_fuzzy_matrix_reflexive()
-- is_fuzzy_matrix_symmetric()
-- fuzzy_matrix_transitive_closure()\
+- `is_fuzzy_matrix_similar()`
+- `is_fuzzy_matrix_equivalent()`
+- `is_fuzzy_matrix_reflexive()`
+- `is_fuzzy_matrix_symmetric()`
+- `fuzzy_matrix_transitive_closure()`\
 为这5个函数添加了默认参数tolerance=1e-8，用于解决比较过程中由于精度原因产生的比较错误的问题
+## [0.1.2] - 2024-05-14
+
+### 添加
+ 
+- 为函数`draw()`添加了参数weight和height,用于直接控制图像的大小\
+以解决聚类元素过多图像堆叠的问题
