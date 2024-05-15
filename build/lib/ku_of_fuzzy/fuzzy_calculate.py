@@ -76,13 +76,13 @@ def max_normalize(df):
 # 第二部分：建立相似度矩阵
 
 # 余弦相似度法
-def cosine_similarity(dataframe1, decimals=3):
+def cosine_similarity(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的余弦相似度，并返回一个m*m的DataFrame。
 
     Args:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame，元素值在[0, 1]之间。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     Returns:
         pd.DataFrame: 一个m*m的DataFrame，其中Xij表示dataframe1的第i行和第j行之间的余弦相似度。
@@ -113,7 +113,7 @@ def cosine_similarity(dataframe1, decimals=3):
 
 
 # 皮尔逊相关系数法
-def pearson_similarity(dataframe1, decimals=3):
+def pearson_similarity(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的皮尔逊相关系数，并返回一个m*m的DataFrame。
 
@@ -132,15 +132,15 @@ def pearson_similarity(dataframe1, decimals=3):
     pearson_matrix = np.zeros((m, m))
 
     # 计算皮尔逊相关系数
-    for i in range(m):
-        for j in range(m):
-            numerator = np.sum(abs((dataframe1.iloc[i] - row_means[i]) * (dataframe1.iloc[j] - row_means[j])))
+    for i in dataframe1.index:
+        for j in dataframe1.index:
+            numerator = np.sum(abs((dataframe1.loc[i] - row_means[i]) * (dataframe1.loc[j] - row_means[j])))
             denominator = np.sqrt(
-                np.sum((dataframe1.iloc[i] - row_means[i]) ** 2) * np.sum((dataframe1.iloc[j] - row_means[j]) ** 2))
+                np.sum((dataframe1.loc[i] - row_means[i]) ** 2) * np.sum((dataframe1.loc[j] - row_means[j]) ** 2))
             if denominator != 0:
-                pearson_matrix[i][j] = numerator / denominator
+                pearson_matrix[dataframe1.index.get_loc(i)][dataframe1.index.get_loc(j)] = numerator / denominator
             else:
-                pearson_matrix[i][j] = np.nan  # 如果分母为0，则赋值为NaN
+                pearson_matrix[dataframe1.index.get_loc(i)][dataframe1.index.get_loc(j)] = np.nan  # 如果分母为0，则赋值为NaN
 
     # 四舍五入相关系数矩阵中的值
     pearson_matrix_rounded = np.round(pearson_matrix, decimals=decimals)
@@ -154,13 +154,13 @@ def pearson_similarity(dataframe1, decimals=3):
 # 距离法求相似度r_ij
 # r_ij=1-c*d_ij
 # 欧式距离
-def euclidean_distance(dataframe1, decimals=3):
+def euclidean_distance(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的欧氏距离，并返回一个m*m的DataFrame。
 
     Args:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     Returns:
         pd.DataFrame: 一个m*m的DataFrame，其中Xij表示dataframe1的第i行和第j行之间的欧氏距离。
@@ -184,13 +184,13 @@ def euclidean_distance(dataframe1, decimals=3):
 
 
 # Hamming距离
-def hamming_distance(dataframe1, decimals=3):
+def hamming_distance(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的自定义距离，并返回一个m*m的DataFrame。
 
     参数:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     返回:
         pd.DataFrame: 一个m*m的DataFrame，其中Xij表示dataframe1的第i行和第j行之间的自定义距离。
@@ -214,13 +214,13 @@ def hamming_distance(dataframe1, decimals=3):
 
 
 # Chebyshev距离
-def Chebyshev_distance(dataframe1, decimals=3):
+def Chebyshev_distance(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的最大距离，并返回一个m*m的DataFrame。
 
     参数:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     返回:
         pd.DataFrame: 一个m*m的DataFrame，其中Xij表示dataframe1的第i行和第j行之间的最大距离。
@@ -245,13 +245,13 @@ def Chebyshev_distance(dataframe1, decimals=3):
 
 # 贴近度法求相似矩阵
 # 最大最小法
-def maximum_minimum(dataframe1, decimals=3):
+def maximum_minimum(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的比率距离，并返回一个m*m的DataFrame。
 
     参数:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     返回:
         pd.DataFrame: 一个m*m的DataFrame，其中rij表示dataframe1的第i行和第j行之间的比率距离。
@@ -277,13 +277,13 @@ def maximum_minimum(dataframe1, decimals=3):
 
 
 # 算术平均最小法
-def arithmetic_mean_minimum(dataframe1, decimals=3):
+def arithmetic_mean_minimum(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的修改后的比率距离，并返回一个m*m的DataFrame。
 
     参数:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     返回:
         pd.DataFrame: 一个m*m的DataFrame，其中rij表示dataframe1的第i行和第j行之间的修改后的比率距离。
@@ -309,13 +309,13 @@ def arithmetic_mean_minimum(dataframe1, decimals=3):
 
 
 # 几何平均最小法
-def geometric_mean_minimum(dataframe1, decimals=3):
+def geometric_mean_minimum(dataframe1, decimals=5):
     """
     计算dataframe1中每一行与其他行之间的几何平均距离，并返回一个m*m的DataFrame。
 
     参数:
         dataframe1 (pd.DataFrame): 输入的m*n的DataFrame。
-        decimals (int): 四舍五入到小数点后的位数，默认为3。
+        decimals (int): 四舍五入到小数点后的位数，默认为5。
 
     返回:
         pd.DataFrame: 一个m*m的DataFrame，其中rij表示dataframe1的第i行和第j行之间的几何平均距离。
@@ -617,7 +617,7 @@ plt.show()
 '''
 
 
-# 聚类和阈值寻找函数
+# 据簇数找分类
 def num_clusters(df, num):
     """
     寻找合适的阈值并进行聚类。
@@ -672,6 +672,54 @@ def num_clusters(df, num):
 
     # 如果没有找到符合条件的阈值和聚类
     raise ValueError("没有找到符合条件的阈值和聚类")
+
+
+# 据阈值找分类
+def threshold_clusters(df, lamda):
+    """
+    给定阈值lamda和df，返回分类的数量和具体分类情况。
+    参数:
+        df (DataFrame): 需要聚类的pandas DataFrame。
+        lamda (float): 给定的阈值。
+    返回:
+        list: 包含两个元素的列表，第一个元素是整型，表示分类的数量；
+              第二个元素是列表，表示具体的分类情况。
+    """
+    # 生成截矩阵
+    binary_matrix = threshold_matrix(df, lamda)
+    # 初始化聚类列表
+    cluster_list = []
+    # 遍历截矩阵的每一行
+    for i, row in binary_matrix.iterrows():
+        # 找到数值为1的元素对应的列名
+        connected_points = list(row[row == 1].index)
+        # 如果当前行的元素还没有被分配到任何聚类中
+        if not any(i in sublist for sublist in cluster_list):
+            # 创建新的聚类
+            new_cluster = [i] + connected_points
+            # 添加到聚类列表中
+            cluster_list.append(new_cluster)
+
+    # 清理聚类列表，合并重叠的聚类
+    cleaned_cluster_list = []
+    while len(cluster_list) > 0:
+        first, *rest = cluster_list
+        first = set(first)
+        lf = -1
+        while len(first) > lf:
+            lf = len(first)
+            rest2 = []
+            for r in rest:
+                if len(first.intersection(set(r))) > 0:
+                    first |= set(r)
+                else:
+                    rest2.append(r)
+            rest = rest2
+        cleaned_cluster_list.append(list(first))
+        cluster_list = rest
+
+    # 返回分类的数量和具体分类情况
+    return [len(cleaned_cluster_list), cleaned_cluster_list]
 
 
 # 模糊统计量与最佳阈值的判读

@@ -87,7 +87,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的余弦相似度，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame，元素值在[0, 1]之间。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的余弦相似度。
 
 ### 皮尔逊相关系数法
@@ -95,7 +95,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的皮尔逊相关系数，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的皮尔逊相关系数。
 
 ### 欧氏距离法
@@ -103,7 +103,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的欧氏距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的欧氏距离。
 
 ### Hamming距离法
@@ -111,7 +111,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的Hamming距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的Hamming距离。
 
 ### Chebyshev距离法
@@ -119,7 +119,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的Chebyshev距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的Chebyshev距离。
 
 ### 最大最小法
@@ -127,7 +127,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的最大最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的最大最小比率距离。
 
 ### 算术平均最小法
@@ -135,7 +135,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的算术平均最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的算术平均最小比率距离。
 
 ### 几何平均最小法
@@ -143,7 +143,7 @@ plt.show()
 - **描述**: 计算DataFrame中每一行与其他行之间的几何平均最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
-  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为5。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的几何平均最小比率距离。
 
 
@@ -232,7 +232,7 @@ plt.show()
 ### 模糊统计量F的求解
 - **函数**: `fuzzy_statistic(df0, df1, lambda_level)`
 - **描述**: 输入原始元素-属性矩阵和归一化、相似后的矩阵，返回对应λ的F值。
-### 聚类阈值确定
+### 聚类数量确定阈值
 
 - **函数**: `num_clusters(df, num)`
 - **描述**: 根据给定的相似度矩阵和期望的聚类数量，找到一个阈值，使得在该阈值下，矩阵中相似度高于阈值的元素被划分为同一类，从而达到指定的聚类数量。
@@ -242,6 +242,16 @@ plt.show()
 - **返回**: 
   - `threshold` (float): 确定的聚类阈值。
   - `cluster_list` (list of lists): 每个子列表包含属于同一类的元素名。
+### 阈值确定聚类数量
+
+- **函数**: `classify_by_threshold(df, lamda)`
+- **描述**: 给定一个阈值和相似度矩阵，返回在该阈值下的聚类数量和具体的分类情况。
+- **参数**:
+  - `df` (DataFrame): 需要聚类的pandas DataFrame。
+  - `lamda` (float): 给定的聚类阈值。
+- **返回**: 
+  - `num_classes` (int): 在阈值 `lamda` 下的聚类数量。
+  - `classification` (list of lists): 每个子列表包含属于同一类的元素名。
 ### 最优分类λ值求解
 - **函数**: `best_F(df0, df1)`
 - **描述**: 输入原始元素-属性矩阵和归一化、相似后的矩阵，返回最优F时的λ值和最优的F值。
