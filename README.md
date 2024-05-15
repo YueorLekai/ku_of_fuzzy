@@ -83,60 +83,69 @@ plt.show()
 `ku_of_fuzzy`库提供了多种方法来建立相似度矩阵。以下是可用的建立相似度矩阵的函数：
 
 ### 余弦相似度法
-- **函数**: `cosine_similarity(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的余弦相似度。
+- **函数**: `cosine_similarity(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的余弦相似度，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame，元素值在[0, 1]之间。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的余弦相似度。
 
 ### 皮尔逊相关系数法
-- **函数**: `pearson_similarity(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的皮尔逊相关系数。
+- **函数**: `pearson_similarity(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的皮尔逊相关系数，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的皮尔逊相关系数。
 
 ### 欧氏距离法
-- **函数**: `euclidean_distance(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的欧氏距离。
+- **函数**: `euclidean_distance(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的欧氏距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的欧氏距离。
 
 ### Hamming距离法
-- **函数**: `hamming_distance(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的Hamming距离。
+- **函数**: `hamming_distance(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的Hamming距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的Hamming距离。
 
 ### Chebyshev距离法
-- **函数**: `Chebyshev_distance(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的Chebyshev距离。
+- **函数**: `Chebyshev_distance(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的Chebyshev距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中Xij表示第i行和第j行之间的Chebyshev距离。
 
 ### 最大最小法
-- **函数**: `maximum_minimum(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的最大最小比率距离。
+- **函数**: `maximum_minimum(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的最大最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的最大最小比率距离。
 
 ### 算术平均最小法
-- **函数**: `arithmetic_mean_minimum(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的算术平均最小比率距离。
+- **函数**: `arithmetic_mean_minimum(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的算术平均最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的算术平均最小比率距离。
 
 ### 几何平均最小法
-- **函数**: `geometric_mean_minimum(dataframe1)`
-- **描述**: 计算DataFrame中每一行与其他行之间的几何平均最小比率距离。
+- **函数**: `geometric_mean_minimum(dataframe1, decimals=3)`
+- **描述**: 计算DataFrame中每一行与其他行之间的几何平均最小比率距离，并四舍五入到指定的小数位数。
 - **参数**:
   - `dataframe1` (pd.DataFrame): 输入的m*n的DataFrame。
+  - `decimals` (int, 可选): 四舍五入到小数点后的位数，默认为3。
 - **返回**: 一个m*m的DataFrame，其中rij表示第i行和第j行之间的几何平均最小比率距离。
+
 
 ## 第三部分：模糊矩阵的聚类
 `ku_of_fuzzy`库提供了一系列函数来处理模糊矩阵的聚类问题。以下是可用的聚类相关函数：
