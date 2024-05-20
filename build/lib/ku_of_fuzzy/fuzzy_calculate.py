@@ -815,8 +815,10 @@ def fuzzy_inner_product(A, B):
     n = len(A)
     if n != len(B):
         raise ValueError("必须具有相同的长度")
-    # 计算模糊集的内积
-    return A.combine(B, min).max()
+
+    # 使用 .iloc[pos] 来按位置访问Series对象中的值
+    inner_product = pd.Series([min(A.iloc[i], B.iloc[i]) for i in range(n)]).max()
+    return inner_product
 
 
 # 模糊集外积
@@ -831,7 +833,8 @@ def fuzzy_outer_product(A, B):
     if n != len(B):
         raise ValueError("必须具有相同的长度")
     # 计算模糊集的外积
-    return A.combine(B, max).min()
+    outer = pd.Series([max(A.iloc[i], B.iloc[i]) for i in range(n)]).min()
+    return outer
 
 
 # 计算两个模糊集的格贴近度
@@ -956,7 +959,7 @@ def euclidean_proximity(A, B):
 def principal_factor_determination_evaluation(A, R):
     """
         A为pd.Series表示的权重向量
-        R为pd.Dataframe表示的综合评价矩阵
+        R为pd.DataFrame表示的综合评价矩阵
         返回主因素决定型评价向量
     """
     # 确保A是一个Series，R是一个DataFrame
@@ -983,20 +986,19 @@ def principal_factor_prominent_evaluation(A, R):
         R为pd.Dataframe表示的综合评价矩阵
         返回主因素突出型评价向量
     """
-    # 确保A是一个Series，R是一个DataFrame
-    if not isinstance(A, pd.Series) or not isinstance(R, pd.DataFrame):
-        raise ValueError("A必须是pd.Series对象，R必须是pd.DataFrame对象")
-
-    # 创建一个空的Series来保存每个对象的综合评价值
-    B = pd.Series(dtype=float)
-
-    # 遍历R的每一列，即每个对象
-    for j in R.columns:
+    # 使用.values获取A和R的纯数值数组
+    A_values = A.values
+    R_values = R.values
+    # 创建一个空的列表来保存每个对象的综合评价值
+    B_values = []
+    # 遍历R_values的每一列，即每个对象
+    for j in range(R_values.shape[1]):
         # 计算每个因素的权重与评价值的乘积
-        products = A * R[j]
+        products = A_values * R_values[:, j]
         # 取乘积的最大值作为对象的综合评价值
-        B[j] = products.max()
-
+        B_values.append(products.max())
+    # 将结果转换为Series，不指定索引
+    B = pd.Series(B_values,index=R.columns)
     # 返回包含所有对象综合评价值的Series
     return B
 
@@ -1005,9 +1007,11 @@ def principal_factor_prominent_evaluation(A, R):
 def weighted_sum_evaluation(A, R):
     """
         A为pd.Series表示的权重向量
-        R为pd.Dataframe表示的综合评价矩阵
+        R为pd.DataFrame表示的综合评价矩阵
         返回加权平均型评价向量
     """
+    A_values = A.values
+    R_values = R.values
     # 确保A是一个Series，R是一个DataFrame
     if not isinstance(A, pd.Series) or not isinstance(R, pd.DataFrame):
         raise ValueError("A必须是pd.Series对象，R必须是pd.DataFrame对象")
@@ -1015,10 +1019,10 @@ def weighted_sum_evaluation(A, R):
     # 创建一个空的Series来保存每个对象的综合评价值
     B = pd.Series(dtype=float)
 
-    # 遍历R的每一列，即每个对象
-    for j in R.columns:
+    # 使用enumerate遍历R的每一列，即每个对象
+    for idx, j in enumerate(R.columns):
         # 计算每个因素的权重与评价值的乘积之和
-        weighted_sum = (A * R[j]).sum()
+        weighted_sum = (A_values * R_values[:, idx]).sum()
         # 将计算结果作为对象的综合评价值
         B[j] = weighted_sum
 
@@ -1030,7 +1034,7 @@ def weighted_sum_evaluation(A, R):
 def min_sum_evaluation(A, R):
     """
         A为pd.Series表示的权重向量
-        R为pd.Dataframe表示的综合评价矩阵
+        R为pd.DataFrame表示的综合评价矩阵
         返回取小上界和型评价向量
     """
     # 确保A是一个Series，R是一个DataFrame
@@ -1041,11 +1045,11 @@ def min_sum_evaluation(A, R):
     B = pd.Series(dtype=float)
 
     # 遍历R的每一列，即每个选项
-    for j in R.columns:
+    for j in range(len(R.columns)):
         # 计算每个因素的权重与评价值的最小值之和
-        min_sum = (A.combine(R[j], min)).sum()
+        min_sum = sum(min(a_val, r_val) for a_val, r_val in zip(A, R.iloc[:, j]))
         # 取和与1之间的最小值作为选项的综合评价值
-        B[j] = min(min_sum, 1)
+        B[R.columns[j]] = min(min_sum, 1)
 
     # 返回包含所有选项综合评价值的Series
     return B
@@ -1055,7 +1059,7 @@ def min_sum_evaluation(A, R):
 def balanced_average_evaluation(A, R):
     """
         A为pd.Series表示的权重向量
-        R为pd.Dataframe表示的综合评价矩阵
+        R为pd.DataFrame表示的综合评价矩阵
         返回均衡平均型向量
     """
     # 确保A是一个Series，R是一个DataFrame
@@ -1069,11 +1073,16 @@ def balanced_average_evaluation(A, R):
     r_j_sum = R.sum()
 
     # 遍历R的每一列，即每个选项
-    for j in R.columns:
-        # 计算每个因素的权重与评价值比值的最小值之和
-        normalized_weighted_sum = (A.combine(R[j] / r_j_sum[j], min)).sum()
+    for j in range(len(R.columns)):
+        # 如果这一列的和不为零，则计算normalized_weighted_sum
+        if r_j_sum[R.columns[j]] != 0:
+            # 计算每个因素的权重与评价值比值的最小值之和
+            normalized_weighted_sum = sum(min(a_val, r_val) for a_val, r_val in zip(A, R.iloc[:, j] / r_j_sum[R.columns[j]]))
+        else:
+            # 如果这一列的和为零，则将normalized_weighted_sum设置为0
+            normalized_weighted_sum = 0
         # 将计算结果作为选项的综合评价值
-        B[j] = normalized_weighted_sum
+        B[R.columns[j]] = normalized_weighted_sum
 
     # 返回包含所有选项综合评价值的Series
     return B

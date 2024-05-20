@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ku_of_fuzzy',
-    version='0.1.5',
+    version='0.1.6',
     author='Yuekai',
     author_email='1977269004@qq.com',
     description='用于模糊数学计算的Python库',
